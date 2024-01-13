@@ -1,5 +1,5 @@
 'use client';
-import { FC, useEffect } from 'react';
+import { FC, memo, useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '@/store/store';
 import { ITransactionPageParams } from '@/interfaces/transaction.interface';
 import { getTransaction } from '@/store/features/transcations.slice';
@@ -70,4 +70,4 @@ const TransactionPage: FC<ITransactionPageParams> = ({ params }) => {
 		</>
 	);
 };
-export default TransactionPage;
+export default memo(TransactionPage);
