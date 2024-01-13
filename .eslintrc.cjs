@@ -2,6 +2,7 @@ module.exports = {
 	root: true,
 	env: { browser: true, es2021: true },
 	extends: [
+		'next',
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:react-hooks/recommended',
@@ -10,6 +11,8 @@ module.exports = {
 	parser: '@typescript-eslint/parser',
 	plugins: ['react-refresh', 'prettier'],
 	rules: {
+		'react/no-unescaped-entities': 'off',
+		'@next/next/no-page-custom-font': 'off',
 		'prettier/prettier': [
 			'error',
 			{
