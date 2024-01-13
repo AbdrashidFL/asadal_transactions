@@ -86,7 +86,7 @@ const Statistics: NextPage = () => {
 		transactions.forEach((item) => {
 			dataLabels[`${item.transactionType}`] += parseInt(item.amount);
 		});
-		let datasets: {
+		const datasets: {
 			label: string;
 			data: number[];
 			backgroundColor: string;
